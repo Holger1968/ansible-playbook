@@ -2,7 +2,7 @@
 - name: der aktualisierte Name
   hosts: all
   tasks:
-    - name: Create a file called '/tmp/testfile.txt' with the content 'hello world'.
+    - name: Create a file called '/tmp/testfile.txt' with the content 'latest version'.
       copy:
-        content: blabla
-        dest: ./testfile.txt
+        content: 'latest version'
+        dest: /tmp/testfile.txt
