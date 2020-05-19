@@ -1,5 +1,5 @@
 ---
-- name: der aktualisierte Name
+- name: your playbook name
   hosts: all
   tasks:
     - name: Create a file called '/tmp/testfile.txt' with the content 'latest version'.
