@@ -4,5 +4,5 @@
   tasks:
     - name: Create a file called '/tmp/testfile.txt' with the content of extra_vars.
       copy:
-        content: "{{ extra_var_namens_testvar } { ansible_facts }}"
+        content: "{{ extra_var_namens_testvar ansible_facts }}"
         dest: /tmp/testfile.txt
