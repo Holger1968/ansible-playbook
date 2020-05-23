@@ -1,8 +1,8 @@
 ---
-- name: your playbook name
+- name: my playbook name
   hosts: all
   tasks:
-    - name: Create a file called '/tmp/testfile.txt' with the content 'latest version'.
+    - name: Create a file called '/tmp/testfile.txt' with the content of extra_vars.
       copy:
-        content: 'latest version'
+        content: {{ Holger }}
         dest: /tmp/testfile.txt
